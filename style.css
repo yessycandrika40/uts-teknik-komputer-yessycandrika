@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fc;
+    padding: 30px;
+    color: #1e293b;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #172554;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form */
+form {
+    background: white;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #0f172a12;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    border: 1px solid #dbe3ef;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb18;
+}
+
+/* Tombol */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0f172a10;
+}
+
+th {
+    background: #172554;
+    color: white;
+    font-weight: 600;
+}
+
+th, td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e5eaf2;
+    text-align: center;
+}
+
+td {
+    font-size: 14px;
+}
+
+tr:hover td {
+    background: #eff6ff;
+}
+
+/* Link */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* Pencarian */
+input[placeholder="Cari data..."] {
+    background: white;
+    border: 1px solid #dbe3ef;
+    border-radius: 9px;
+    padding: 13px 16px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
